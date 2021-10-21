@@ -22,6 +22,5 @@ private:
 	std::queue<Request*> _taskQueue;
 	std::vector<std::thread> _threads;
 	bool _stopFlag;
-	std::condition_variable _cvar;
 	std::mutex _mtx;
 };
